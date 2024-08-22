@@ -47,7 +47,7 @@
   width: 480px;
   height: 60px;
   background: #292929;
-  border-radius: 30px;
+  border-radius: 15px;
 }
 
 .input img {
@@ -83,7 +83,7 @@
   margin: 60px auto;
 }
 
-.submit {
+.submit{
   display: flex;
   justify-content: center;
   align-items: center;
@@ -98,6 +98,7 @@
 }
 
 .gray {
-  background: #eceeee;
-  color: #1c1c1c;
+  outline: 2px solid #4dfdc8;
+  background: transparent;
+  color:   #4dfdc8;
 }
