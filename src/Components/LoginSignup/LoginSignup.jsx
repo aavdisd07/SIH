@@ -8,9 +8,15 @@ import org_icon from "../Assets/organization.png";
 import show from "../Assets/show.png";
 import hide from "../Assets/hide.png"; // Add a hide icon for toggling
 
-const LoginSignup = () => {
+const LoginSignup = ({ onLogin }) => {
   const [action, setAction] = useState("Login");
   const [passVisible, setPassVisible] = useState(false); // Renamed state for clarity
+
+  const handleSwitch = () => {
+    onLogin(); // Call the onLogin callback to switch to the main view
+  };
+
+
 
   return (
     <div className="container">
