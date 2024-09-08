@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/SIH/loginsignup/static/css/main.7bf8a7b3.css",
-    "main.js": "/SIH/loginsignup/static/js/main.a48e15f4.js",
-    "static/js/453.9c9f9a64.chunk.js": "/SIH/loginsignup/static/js/453.9c9f9a64.chunk.js",
-    "static/media/employe.jpg": "/SIH/loginsignup/static/media/employe.4fe7641fa9adfa409a34.jpg",
-    "index.html": "/SIH/loginsignup/index.html",
-    "main.7bf8a7b3.css.map": "/SIH/loginsignup/static/css/main.7bf8a7b3.css.map",
-    "main.a48e15f4.js.map": "/SIH/loginsignup/static/js/main.a48e15f4.js.map",
-    "453.9c9f9a64.chunk.js.map": "/SIH/loginsignup/static/js/453.9c9f9a64.chunk.js.map"
+    "main.css": "/SIH/static/css/main.7bf8a7b3.css",
+    "main.js": "/SIH/static/js/main.0f46869d.js",
+    "static/js/453.9c9f9a64.chunk.js": "/SIH/static/js/453.9c9f9a64.chunk.js",
+    "static/media/employe.jpg": "/SIH/static/media/employe.4fe7641fa9adfa409a34.jpg",
+    "index.html": "/SIH/index.html",
+    "main.7bf8a7b3.css.map": "/SIH/static/css/main.7bf8a7b3.css.map",
+    "main.0f46869d.js.map": "/SIH/static/js/main.0f46869d.js.map",
+    "453.9c9f9a64.chunk.js.map": "/SIH/static/js/453.9c9f9a64.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.7bf8a7b3.css",
-    "static/js/main.a48e15f4.js"
+    "static/js/main.0f46869d.js"
   ]
 }
