@@ -9,7 +9,7 @@ import { FaUserClock } from "react-icons/fa6";
 const Sidebar = ({ onSwitchToLogin }) => {
   return (
     <aside id="sidebar">
-      <dgitiv className="sidebar">
+      <div className="sidebar">
         <div className="sidebar-brand">
             <div className="minibar">
             {/* <FaUserClock /> */}
