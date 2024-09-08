@@ -1,4 +1,5 @@
-import profilepic from "./Assets/employe.jpg";
+import profilepic from "../Assets/employe.jpg";
+import "./Card.css";
 
 function Card() {
   return (

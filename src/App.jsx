@@ -3,7 +3,7 @@ import LoginSignup from './Components/LoginSignup/LoginSignup';
 import SideBar from './Components/Sidebar';
 import Body from './Components/Body';
 import './App.css';
-import Card from './Components/Card';
+import Card from './Components/Homepage/Card';
 
 
 function App() {
