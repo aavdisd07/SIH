@@ -3,6 +3,8 @@ import LoginSignup from './Components/LoginSignup/LoginSignup';
 import SideBar from './Components/Sidebar';
 import Body from './Components/Body';
 import './App.css';
+import Card from './Components/Card';
+
 
 function App() {
   // State to manage which component to show
@@ -34,9 +36,11 @@ function App() {
       ) : (
         <div className='grid-container'>
           <SideBar onSwitchToLogin={handleSwitchToLogin} />
+          <Card/>
           <Body onSwitchToLogin={handleSwitchToLogin} />
         </div>
       )}
+      
     </>
   );
 }
