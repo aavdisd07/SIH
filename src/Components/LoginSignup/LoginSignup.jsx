@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import "./LoginSignup.css";
-
 import user_icon from "../Assets/user.png";
 import email_icon from "../Assets/mail.png";
 import password_icon from "../Assets/dialpad.png";
@@ -15,9 +14,6 @@ const LoginSignup = ({ onLogin }) => {
   const handleSwitch = () => {
     onLogin(); // Call the onLogin callback to switch to the main view
   };
-
-
-
   return (
     <div className="container">
       <div className="header">
