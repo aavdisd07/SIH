@@ -41,11 +41,11 @@ body {
     margin-right: 20px;
     /* Add space between elements */
   } 
-  .card-header {
+  /* card-header { */
     /* display: flex;
     justify-content: space-between;
     align-items: center; */
-  }
+  /* } */
   
   .header-content {
     display: flex;
