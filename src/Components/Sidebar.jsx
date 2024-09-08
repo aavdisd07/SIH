@@ -10,8 +10,9 @@ import { FaUserClock } from "react-icons/fa6";
 const Sidebar = ({ onSwitchToLogin }) => {
   return (
     <aside id="sidebar">
-      <div className="sidebar"> {/* Corrected the typo from <dgitiv> to <div> */}
-
+      <div className="sidebar">
+        {" "}
+        {/* Corrected the typo from <dgitiv> to <div> */}
         <div className="sidebar-brand">
           <div className="minibar">
             {/* <FaUserClock /> */}
@@ -62,10 +63,11 @@ const Sidebar = ({ onSwitchToLogin }) => {
             </a>
           </li>
         </ul>
-      </div> {/* Corrected the closing div tag */}
+      </div>{" "}
+      {/* Corrected the closing div tag */}
       <button
         className="m-20"
-        style={{ backgroundColor: 'blue' }}
+        style={{ backgroundColor: "blue" }}
         onClick={onSwitchToLogin} // Handle the button click to switch to the login/signup view
       >
         Switch to Login/Signup
