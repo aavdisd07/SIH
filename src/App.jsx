@@ -1,47 +1,60 @@
 import React, { useState } from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import LoginSignup from './Components/LoginSignup/LoginSignup';
-import SideBar from './Components/Sidebar';
+import SideBar from './Components/Sidebar/Sidebar';
 import Body from './Components/Body';
 import './App.css';
 import Card from './Components/Homepage/Card';
-
+import DPage from './Components/Dashboard/DPage';
 
 function App() {
-  // State to manage which component to show
   const [showLoginSignup, setShowLoginSignup] = useState(true);
+  const [currentPage, setCurrentPage] = useState(''); // State to track the current page
 
-  // Function to handle switching to the main view
   const handleSwitchToMain = () => {
     setShowLoginSignup(false);
   };
 
-  // Function to handle switching back to the login/signup view
   const handleSwitchToLogin = () => {
     setShowLoginSignup(true);
   };
 
+  const handleNavigate = (page) => {
+    setCurrentPage(page); // Update the current page based on sidebar navigation
+  };
+
   return (
-    <>
-      {showLoginSignup ? (
-        <div>
-          <button
-            className='m-20'
-            style={{ backgroundColor: 'red' }}
-            onClick={handleSwitchToMain} // Handle the button click to continue without login
-          >
-            Continue without login
-          </button>
-          <LoginSignup onLogin={handleSwitchToMain} />
-        </div>
-      ) : (
-        <div className='grid-container'>
-          <SideBar onSwitchToLogin={handleSwitchToLogin} />
-          <Card/>
-          <Body onSwitchToLogin={handleSwitchToLogin} />
-        </div>
-      )}
-      
-    </>
+    <Router>
+      <>
+        {showLoginSignup ? (
+          <div>
+            <button
+              className='m-20'
+              style={{ backgroundColor: 'red' }}
+              onClick={handleSwitchToMain}
+            >
+              Continue without login
+            </button>
+            <LoginSignup onLogin={handleSwitchToMain} />
+          </div>
+        ) : (
+          <div className='grid-container'>
+            <SideBar onSwitchToLogin={handleSwitchToLogin} onNavigate={handleNavigate} />
+            <Routes>
+              <Route path="/dashboard" element={<DPage />} />
+              <Route path="/members" element={<Card />} />
+              <Route path="/schedule" element={<Body />} />
+              {/* Add more routes here as needed */}
+            </Routes>
+            {/* Render the content based on the current page */}
+            {currentPage === 'dashboard' && <DPage />}
+            {currentPage === 'members' && <Card />}
+            {currentPage === 'schedule' && <Body />}
+            {/* Render additional components based on the current page */}
+          </div>
+        )}
+      </>
+    </Router>
   );
 }
 

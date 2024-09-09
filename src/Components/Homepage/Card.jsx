@@ -3,7 +3,7 @@ import "./Card.css";
 
 function Card() {
   return (
-    <>
+    <div className="Cardbody">
       <div className="card">
         <div className="card-header">
           <div className="header-content">
@@ -196,7 +196,7 @@ function Card() {
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 }
 
