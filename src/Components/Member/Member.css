@@ -1,18 +1,20 @@
 .Cardbody {
-  background-color: #080808;
+  background-color: black;
+  border-left:2px solid white;
   font-family: "Courier New" Courier monospace;
+  grid-area: main;
+  padding: 50px;
+  height: 100vh;
 }
-.card {
-  margin: 50px;
-  width: 90%;
-  flex: 1;
-  /* Change this value as per your desired width */
-  max-width: 1200px;
-  border-radius: 20px;
-  padding: 10px;
+.card{
+  width: 98%;
+  border-radius: 34px;
+  padding: 30px;
   border: 2px solid aqua;
-  background-color: #080808;
+  background-color: #362E38;
 }
+
+
 
 .employee-role-container,
 .employee-phone-container,
@@ -25,40 +27,35 @@
 }
 .emp p {
   margin-right: 20px;
-  /* Add space between elements */
 }
-/* card-header { */
-/* display: flex;
-    justify-content: space-between;
-    align-items: center; */
-/* } */
 
 .header-content {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /* Adjust the gap as needed */
 }
 
 .card-actions {
   display: flex;
   gap: 10px;
   margin-left: auto;
-  /* Adjust the gap as needed */
 }
 .card-title {
   font-size: 30px;
   font-weight: bold;
+  color: #00ffff;
+}
+.underline {
+  width: 36px;
+  height: 6px;
+  transform: rotate(90deg);
+  background: #00ffff;
+  border-radius: 9px;
 }
 .card-title::before {
-  content: "|";
-  /* Add the vertical line before the title */
-  color: #00ffff;
-  /* Color of the vertical line */
   font-size: 36px;
-  /* Increase the size of the line */
   margin-right: 10px;
-  /* Space between the line and the title */
+  border-radius: 20px;
 }
 .card-button {
   padding: 10px;
@@ -82,11 +79,12 @@
 .employee-phone-label,
 .employee-email-label {
   margin-right: 10px;
-  /* Adjust spacing between label and value */
 }
 .employee-info {
   display: flex;
   align-items: center;
+  color: white;
+
 }
 .employee-name-actions {
   font-size: 20px;
@@ -118,27 +116,21 @@
   display: flex;
   justify-content: space-between;
   margin-top: 20px;
-  /* flex-wrap: wrap; */
 }
 
 .card-stat {
   flex: 1 1 calc(33.33% - 20px);
-  /* Three cards per row with spacing */
   border-radius: 20px;
   padding: 10px;
-  /* Increased padding for better content spacing */
   border: 2px solid #474545;
   margin: 10px;
-  /* Add margin between cards */
   box-sizing: border-box;
-  /* Ensure padding is included in width calculations */
   display: flex;
   flex-direction: column;
   max-width: 280px;
-  /* Increased width */
   max-height: 300px;
+  color: white;
   background-color: #080808;
-  /* Increased height */
 }
 
 .card-stat-number {
@@ -150,20 +142,16 @@
   margin-top: 5px;
   font-size: medium;
 }
-/* employee history */
+
 .history-card {
-  margin: 50px;
-  width: 90%;
-  flex: 1;
-  /* Adjust width value for responsiveness */
-  max-width: 1200px;
-  /* Increase the maximum width */
-  border-radius: 20px;
-  margin-top: 5px;
-  padding: 10px;
+  width: 98%;
+  margin-top: 10px;
+  border-radius: 34px;
+  padding-left: 30px;
   padding-right: 30px;
+  padding-top: 20px;
   border: 2px solid aqua;
-  background-color: #080808;
+  background-color: #362E38;
 }
 
 .history-card-header {
@@ -175,16 +163,7 @@
 .history-title {
   font-size: 30px;
   font-weight: bold;
-}
-.history-title::before {
-  content: "|";
-  /* Add the vertical line before the title */
   color: #00ffff;
-  /* Color of the vertical line */
-  font-size: 36px;
-  /* Increase the size of the line */
-  margin-right: 10px;
-  /* Space between the line and the title */
 }
 .history-actions {
   display: flex;
@@ -209,29 +188,22 @@
 .history-stats {
   display: flex;
   justify-content: space-between;
-  /* margin-top: 10px; */
   flex-wrap: wrap;
 }
 
 .history-stat {
   flex: 1 1 calc(33.33% - 20px);
-  /* Three cards per row with spacing */
-  /* Adjust width to fit three per row, with some margin */
   border-radius: 20px;
   padding: 20px;
   border: 2px solid #474545;
   background-color: #080808;
   margin: 10px;
-  /* Add margin between cards */
   box-sizing: border-box;
-  /* Ensure padding is included in width calculations */
   display: flex;
   flex-direction: column;
   max-width: 300px;
-  /* Adjust width as needed */
   max-height: 500px;
-  /* Increased height */
-  /* Adjust as needed to control card width */
+  color: white;
 }
 
 .history-stat-header {
@@ -239,14 +211,12 @@
   align-items: center;
   justify-content: space-between;
   margin-bottom: 5px;
-  /* Reduced space below the header */
 }
 
 .history-stat-number {
   font-size: 16px;
   font-weight: bold;
   white-space: nowrap;
-  /* Prevent text from breaking into a new line */
 }
 
 .hist-btn {
@@ -254,14 +224,10 @@
   margin: 5px;
   border-radius: 10px;
   border: 1px solid #00ffff;
-  /* Add border to maintain visibility */
   background-color: transparent;
-  /* Set background to transparent */
   color: #ffffff;
-  /* Set text color to match the border color */
   cursor: pointer;
   font-weight: bold;
-  /* Optional: Make text bold for better visibility */
 }
 
 .history-stat-times {
@@ -277,9 +243,6 @@
 }
 .highlight-time {
   color: white;
-  /* Set text color to white */
   font-size: 20px;
-  /* Increase font size */
   font-weight: bold;
-  /* Make text bold */
 }

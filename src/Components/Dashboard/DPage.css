@@ -4,13 +4,13 @@
   height: 100vh;
   overflow: auto;
   background-color: rgb(10, 10, 10);
+  border-left:2px solid white;
 }
 
 .main {
   padding: 5px;
   margin-bottom: 10px;
 }
-
 .nav {
   padding: 13px;
   display: flex;
@@ -20,7 +20,7 @@
   background-color: #090909;
   /* border-left: 2px solid aqua; */
   /* border-right: 2px solid aqua; */
-  /* border-bottom: 2px solid aqua; */
+  border-bottom: 2px solid aqua;
   /* box-shadow: 0 4px 8px rgba(94, 43, 43, 0.1); */
   -webkit-user-select: none;
 }
@@ -105,4 +105,15 @@
   background-color: blueviolet;
   height: 100%;
   width: 100%;
+}
+
+.w-full {
+  width: 100%;
+  background-color: aquamarine;
+  border-radius: 20px;
+}
+
+.relative {
+  position: relative;
+  margin: 20px;
 }

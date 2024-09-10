@@ -1,0 +1,18 @@
+body{
+    margin: 0;
+    padding: 0;
+  }
+  .grid-container{
+    display: grid;
+    grid-template-columns: 280px 1fr; /* Sidebar fixed width, main content flexible */
+    grid-template-rows: 100vh; /* Full height for both columns */
+    grid-template-areas: 'sidebar main';
+    height: 100vh; /* Full viewport height */
+    margin: 0;
+    padding: 0;
+}
+.main{
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+} 

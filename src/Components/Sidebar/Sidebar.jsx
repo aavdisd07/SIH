@@ -5,17 +5,10 @@ import { IoIosArrowDown } from "react-icons/io";
 import { GrNotification } from "react-icons/gr";
 import { GrAnalytics } from "react-icons/gr";
 import { GoSidebarExpand } from "react-icons/go";
-import Card from "../Homepage/Card";
 import { Link } from "react-router-dom";
 import "./Sidebar.css";
 
-const Sidebar = ({ onSwitchToLogin, onNavigate }) => {
-  const handleClick = (page) => {
-    if (onNavigate) {
-      onNavigate(page);
-    }
-  };
-
+const Sidebar = ({ onNavigate }) => {
   return (
     <aside id="sidebar">
       <div className="sidebar">
@@ -27,63 +20,49 @@ const Sidebar = ({ onSwitchToLogin, onNavigate }) => {
         </div>
         <ul className="sidebar-list">
           MAIN MENU
-          <li
-            className="sidebar-list-item"
-            onClick={() => handleClick("dashboard")}
-          >
+          <Link to="/dashboard" >
+          <li className="sidebar-list-item">
             <BsCart3 className="icon" /> Dashboard
           </li>
-          <li
-            className="sidebar-list-item"
-            id="drop-down"
-            onClick={() => handleClick("analytics")}
-          >
+          </Link>
+          <Link to="/analytics" >
+          <li className="sidebar-list-item" id="drop-down">
             <GrAnalytics id="analy" />
             Analytics
             <IoIosArrowDown className="down" />
           </li>
-          <li
-            className="sidebar-list-item"
-            onClick={() => handleClick("schedule")}
-          >
+          </Link>
+          <Link to="/schedule" >
+          <li className="sidebar-list-item">
             <GrSchedule /> Schedule
           </li>
-          <li
-            className="sidebar-list-item"
-            onClick={() => handleClick("schedule")}
-          >
-            <BsCart3 className="icon" />{" "}
-            <Link to="/members" onClick={() => handleClick("members")}>
-              Members
-            </Link>
+          </Link>
+          <Link to="/members" >
+          <li className="sidebar-list-item">
+            <BsCart3 className="icon" /> Members
           </li>
-          <li
-            className="sidebar-list-item"
-            onClick={() => handleClick("notifications")}
-          >
+          </Link>
+          <Link to="/notification">
+          <li className="sidebar-list-item">
             <GrNotification /> Notifications
           </li>
+          </Link>
         </ul>
         <ul className="sidebar-list">
           SETTINGS
-          <li
-            className="sidebar-list-item"
-            onClick={() => handleClick("notifications-settings")}
-          >
-            <BsCart3 className="icon" /> Notifications <IoIosArrowDown />
+          <Link to="/notification" >
+          <li className="sidebar-list-item">
+            <BsCart3 className="icon" /> Notifications{" "}
+            <IoIosArrowDown className="down1" />
           </li>
-          <li className="sidebar-list-item" onClick={() => handleClick("help")}>
+          </Link>
+          <Link to="/helpcenter">
+          <li className="sidebar-list-item">
             <BsCart3 className="icon" /> Help center
           </li>
+          </Link>
         </ul>
       </div>
-      <button
-        className="m-20"
-        style={{ backgroundColor: "blue" }}
-        onClick={onSwitchToLogin}
-      >
-        Switch to Login/Signup
-      </button>
     </aside>
   );
 };
