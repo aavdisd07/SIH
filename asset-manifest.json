@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/SIH/static/css/main.3334f027.css",
+    "main.css": "/SIH/static/css/main.71ed1b2c.css",
     "main.js": "/SIH/static/js/main.21e161b9.js",
     "static/js/453.76fa72ca.chunk.js": "/SIH/static/js/453.76fa72ca.chunk.js",
     "index.html": "/SIH/index.html",
-    "main.3334f027.css.map": "/SIH/static/css/main.3334f027.css.map",
+    "main.71ed1b2c.css.map": "/SIH/static/css/main.71ed1b2c.css.map",
     "main.21e161b9.js.map": "/SIH/static/js/main.21e161b9.js.map",
     "453.76fa72ca.chunk.js.map": "/SIH/static/js/453.76fa72ca.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.3334f027.css",
+    "static/css/main.71ed1b2c.css",
     "static/js/main.21e161b9.js"
   ]
 }
