@@ -1,0 +1,37 @@
+/* styles.css */
+body.light-theme {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+body.dark-theme {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+body.solarized-theme {
+    background-color: #fdf6e3;
+    color: #586e75;
+}
+
+body.monokai-theme {
+    background-color: #272822;
+    color: #f8f8f2;
+}
+
+/* Optional: Add specific styling for elements within the card */
+.card.light-theme {
+    border-color: #00ffff;
+}
+
+.card.dark-theme {
+    border-color: #00ffff;
+}
+
+.card.solarized-theme {
+    border-color: #00ffff;
+}
+
+.card.monokai-theme {
+    border-color: #00ffff;
+}

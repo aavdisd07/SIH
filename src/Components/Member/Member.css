@@ -10,6 +10,7 @@
   width: 98%;
   border-radius: 34px;
   padding: 30px;
+  padding-top: 10px;
   border: 2px solid aqua;
   background-color: #362E38;
 }
@@ -159,7 +160,6 @@
   justify-content: space-between;
   align-items: center;
 }
-
 .history-title {
   font-size: 30px;
   font-weight: bold;
@@ -216,7 +216,7 @@
 .history-stat-number {
   font-size: 16px;
   font-weight: bold;
-  white-space: nowrap;
+  /* white-space: nowrap; */
 }
 
 .hist-btn {

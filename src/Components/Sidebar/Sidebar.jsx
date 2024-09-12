@@ -48,7 +48,7 @@ const Sidebar = ({ onNavigate }) => {
           </li>
           </Link>
         </ul>
-        <ul className="sidebar-list">
+        {/* <ul className="sidebar-list">
           SETTINGS
           <Link to="/notification" >
           <li className="sidebar-list-item">
@@ -61,7 +61,34 @@ const Sidebar = ({ onNavigate }) => {
             <BsCart3 className="icon" /> Help center
           </li>
           </Link>
-        </ul>
+        </ul> */}
+   
+        {/* sanika------> */}
+
+        <ul className="sidebar-list">
+          SETTINGS
+
+         <li className="sidebar-list-item">
+  <Link to="/login-and-security" className="sidebar-link">
+    Login And Security
+  </Link>
+</li>
+
+<li className="sidebar-list-item">
+  <Link to="/general-settings" className="sidebar-link">
+    General Setting
+  </Link>
+</li>
+
+<li className="sidebar-list-item">
+  <Link to="/organization-settings" className="sidebar-link">
+    Organization Setting
+  </Link>
+</li>
+
+ </ul>
+
+
       </div>
     </aside>
   );
