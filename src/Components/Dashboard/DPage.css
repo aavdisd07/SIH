@@ -1,16 +1,12 @@
 .Container {
   grid-area: main;
-  padding-left: 20px;
+  padding: 20px;
+  padding-top: 0%;
   height: 100vh;
-  overflow: auto;
   background-color: rgb(10, 10, 10);
   border-left:2px solid white;
 }
 
-.main {
-  padding: 5px;
-  margin-bottom: 10px;
-}
 .nav {
   padding: 13px;
   display: flex;
@@ -61,11 +57,6 @@
   border-radius: 40%;
 }
 
-.Menu {
-  background-color: #090909;
-  color: aqua;
-}
-
 .MenuItem:hover {
   background-color: black;
   color: aqua;
@@ -93,18 +84,6 @@
     width: 35px;
     height: 35px;
   }
-}
-
-.middlebody {
-  display: grid;
-  grid-template-columns: 1fr 1fr; /* Adjust grid template as needed */
-  grid-template-rows: 1fr; /* Adjust grid template as needed */
-  gap: 10px; /* Space between grid items */
-}
-.sidebody {
-  background-color: blueviolet;
-  height: 100%;
-  width: 100%;
 }
 
 .w-full {

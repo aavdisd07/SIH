@@ -4,12 +4,8 @@ import Autocomplete from "@mui/joy/Autocomplete";
 import AutocompleteOption from "@mui/joy/AutocompleteOption";
 import Avatar from "@mui/joy/Avatar";
 import Badge from "@mui/joy/Badge";
-import BarListHero from "./BarListhero"; // import { IoChatbubbleEllipses } from "react-icons/io5";
-import Menu from "@mui/joy/Menu";
-import MenuButton from "@mui/joy/MenuButton";
-import MenuItem from "@mui/joy/MenuItem";
-import MoreVert from "@mui/icons-material/MoreVert";
-import IconButton from "@mui/joy/IconButton";
+import Home from "./Home";
+
 
 const employees = [
   {
@@ -70,18 +66,20 @@ const DPage = () => {
             </Badge>
 
     
-            <i className="chat-icon"  class="cil-chat-bubble"></i>
+            {/* <i className="chat-icon"  class="cil-chat-bubble"></i> */}
 
             <Avatar
-              alt="Remy Sharp"
-              src="https://pngfre.com/wp-content/uploads/oggy-2.png"
-              className="avatar"
-            />
+        size="lg"
+        radius="sm"
+        src="https://raw.githubusercontent.com/mantinedev/mantine/master/.demo/avatars/avatar-1.png"
+      />
+
             
           </div>
-        </div>
-        <BarListHero className="relative w-full" />
 
+       
+        </div>
+        <Home/>
       </div>
     </div>
   );

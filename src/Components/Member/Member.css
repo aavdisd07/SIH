@@ -190,7 +190,6 @@
   justify-content: space-between;
   flex-wrap: wrap;
 }
-
 .history-stat {
   flex: 1 1 calc(33.33% - 20px);
   border-radius: 20px;
@@ -205,18 +204,15 @@
   max-height: 500px;
   color: white;
 }
-
 .history-stat-header {
   display: flex;
   align-items: center;
   justify-content: space-between;
   margin-bottom: 5px;
 }
-
 .history-stat-number {
   font-size: 16px;
   font-weight: bold;
-  /* white-space: nowrap; */
 }
 
 .hist-btn {
@@ -245,4 +241,8 @@
   color: white;
   font-size: 20px;
   font-weight: bold;
+}
+
+.card:first-child {
+  background-color: #362E38;
 }
