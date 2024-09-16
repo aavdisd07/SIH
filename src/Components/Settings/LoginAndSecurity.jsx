@@ -91,8 +91,9 @@ const styles = {
     justifyContent: 'space-between',
   },
   leftSection: {
-    flex: '1',
-    textAlign: 'center',
+    display: 'flex',
+    flexDirection: 'column', // Aligns items vertically
+    alignItems: 'center',    // Centers items horizontally
   },
   rightSection: {
     flex: '2',
