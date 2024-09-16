@@ -14,25 +14,22 @@
   justify-content: space-between;
   border-radius: 20px;
   background-color: #090909;
-  /* border-left: 2px solid aqua; */
-  /* border-right: 2px solid aqua; */
   border-bottom: 2px solid aqua;
-  /* box-shadow: 0 4px 8px rgba(94, 43, 43, 0.1); */
   -webkit-user-select: none;
 }
 
 .right-section {
   display: flex;
-  align-items: center;
-  gap: 20px; /* Adjusted gap for better spacing */
+  align-items: center; /* This will vertically align the icon and avatar */
+  gap: 15px; /* You can adjust this gap as per your preference */
 }
 
 .logo,
 .notification-icon {
   width: 40px;
   height: 40px;
-}
-.chat-icon, .avatar {
+} 
+.avatar {
   height: 35px;
   width: 35px;
 }
@@ -62,6 +59,11 @@
   color: aqua;
 }
 
+.center-section {
+  padding: 2px 0px;
+   /* Optional, for spacing */
+}
+
 @media (max-width: 768px) {
   .nav {
     flex-direction: column;
@@ -75,6 +77,9 @@
 
   .center-section {
     width: 100%;
+    color: aqua; /* Adjust if needed */
+    background-color: black; /* Ensure visibility against black background */
+    padding: 15px; /* Optional, for spacing */
   }
 
   .logo,

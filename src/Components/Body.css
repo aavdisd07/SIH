@@ -1,6 +1,7 @@
 body{
     margin: 0;
     padding: 0;
+    -webkit-user-select: none;
   }
   .grid-container{
     display: grid;
@@ -15,4 +16,5 @@ body{
   height: 100vh;
   margin: 0;
   padding: 0;
+  overflow: auto;
 } 

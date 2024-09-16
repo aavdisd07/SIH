@@ -1,11 +1,208 @@
-.sch-container{
-    grid-area: main;
-    background-color: black;
-    color: aqua;
-    height: 100vh;
-    margin: 0px;
-    padding: 10px;
-    text-align: center;
-    font-size:100px;
-    border-left:2px solid white;
+.sch-container {
+  margin: auto;
+  grid-area: main;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  border-left:2px solid white;
+}
+
+h2 {
+  color:#00FFFF;
+  font-size: 30px;
+  text-align: center;
+  font-weight: bold;
+}
+
+body {
+  background-color: black;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  /* Prevent horizontal scrolling */
+}
+
+.sch-search {
+  display: flex;
+  gap: 9px;
+  margin-bottom: 20px;
+}
+
+.sch-search input {
+  padding: 10px;
+  width: 300px;
+  border-radius: 10px;
+  color: #f1ebeb;
+  cursor: pointer;
+  font-weight: bold;
+  border: 1px dashed #00ffff;
+  background-color: #191a1b;
+}
+
+.sch-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.sch-card {
+  background-color: #333333;
+  border: 1px solid #00ffff;
+  border-radius: 8px;
+  padding: 15px;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  width: calc(33% - 20px);
+  /* Apply flip-left animation */
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.sch-card.fade-in {
+  opacity: 1;
+}
+
+
+
+.sch-employee-image {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 10px;
+  object-position: 5% 10%;
+}
+
+.sch-details h3 {
+  margin: 0;
+  font-size: 25px;
+  color: #00FFFF;
+}
+
+.sch-details p {
+  margin: 5px 0;
+  color: rgb(243, 241, 237);
+}
+
+.sch-actions {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.edit-btn,
+.delete-btn ,#search-btn{
+  padding: 5px 10px;
+  border: none;
+  cursor: pointer;
+   margin: 0px 10px;
+}
+#search-btn{
+  background-color:#333333 ;
+  color: white;
+  border: 1px solid aqua;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 5px ;
+}
+.edit-btn {
+  background-color: #6dbf73;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.edit-btn:hover {
+  background-color: green;
+}
+
+.delete-btn {
+  background-color: tomato;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.delete-btn:hover {
+  background-color: red;
+}
+
+.sch-status {
+  margin-top: 10px;
+}
+
+.sch-status button {
+  padding: 5px 10px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  width: 200px;
+
+}
+
+.sch-status .approved {
+  background-color: #07e1e1c5 ;
+  color: black;
+  padding: 5px 10px;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+  animation: pulse 2s infinite;
+}
+
+.sch-status .approved:hover {
+  background-color:#00FFFF;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.05);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+.sch-status .pending {
+  background-color: #f0ad4e;
+  color: white;
+  padding: 5px 10px;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+  animation: bounce 1.5s infinite;
+}
+
+.sch-status .pending:hover {
+  background-color: #ec971f;
+}
+
+@keyframes bounce {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-5px);
+  }
+}
+
+/* Flip Left Animation for Cards */
+@keyframes flipLeft {
+  0% {
+    transform: perspective(1000px) rotateX(180deg);
+  }
+
+  100% {
+    transform: perspective(1000px) rotateX(0);
+  }
 }
